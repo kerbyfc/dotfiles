@@ -1,0 +1,48 @@
+[user]
+	name = Alexander Lukin
+	email = kerbyfc@gmail.com
+
+[core]
+	editor = vi
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
+
+[push]
+	default = current
+
+[color]
+	ui = auto
+
+[color "branch"]
+	current = yellow blink
+	local = green blink
+	remote = cyan blink
+
+[color "diff"]
+	meta = yellow blink
+	frag = magenta blink
+	old = red blink
+	new = green blink
+	whitespace = red reverse
+
+[color "status"]
+	added = green blink
+	changed = yellow blink
+	untracked = red blink
+
+[rerere]
+	enabled = 1
+	autoupdate = 1
+[http]
+	sslVerify = false
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log
+	lg = log
+	lg = log
+	lg = log
+	lg = log
