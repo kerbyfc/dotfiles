@@ -143,16 +143,17 @@ moveCurrentWindowToScreen = fn(function(screenNumber) {
 });
 
 keys.push(Key.on('g', ['ctrl', 'cmd'], function() {
-  return focusApp("Google Chrome");
+  focusApp("Google Chrome");
+  focusApp("Yandex");
 }));
 
 keys.push(Key.on('v', ['ctrl', 'cmd'], function() {
-  // return focusApp("Code");
-  return focusApp("Code");
+  focusApp("Code");
+  focusApp("WebStorm");
 }));
 
 keys.push(Key.on('m', ['ctrl', 'cmd'], function() {
-  return focusApp("Mail");
+  return focusApp("Почта");
 }));
 
 keys.push(Key.on('s', ['ctrl', 'cmd'], function() {

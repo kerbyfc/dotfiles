@@ -4,7 +4,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+. ~/.nvm/nvm.sh
 
 export EDITOR=vim
 export NODE_TLS_REJECT_UNAUTHORIZED=0
