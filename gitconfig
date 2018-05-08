@@ -33,8 +33,6 @@
 [rerere]
 	enabled = 1
 	autoupdate = 1
-[http]
-	sslVerify = false
 [alias]
 	st = status
 	ci = commit

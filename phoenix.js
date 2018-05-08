@@ -144,12 +144,11 @@ moveCurrentWindowToScreen = fn(function(screenNumber) {
 
 keys.push(Key.on('g', ['ctrl', 'cmd'], function() {
   focusApp("Google Chrome");
-  focusApp("Yandex");
+  focusApp("Chromium");
 }));
 
 keys.push(Key.on('v', ['ctrl', 'cmd'], function() {
-  focusApp("Code");
-  focusApp("WebStorm");
+  focusApp("Atom");
 }));
 
 keys.push(Key.on('m', ['ctrl', 'cmd'], function() {
@@ -160,10 +159,6 @@ keys.push(Key.on('s', ['ctrl', 'cmd'], function() {
   focusApp("Adium");
   focusApp("Telegram");
   focusApp("Skype");
-}));
-
-keys.push(Key.on('e', ['ctrl', 'cmd'], function() {
-  return focusApp("Mail");
 }));
 
 keys.push(Key.on('t', ['ctrl', 'cmd'], function() {
