@@ -1,10 +1,7 @@
 if match(&runtimepath, 'ctrlp') != -1
-  let ctrlp_follow_symlinks = 0
-  let g:ctrlp_working_path_mode = 0
+  let ctrlp_follow_symlinks = 1
+  let g:ctrlp_working_path_mode = 'ra'
   let g:ctrlp_use_caching = 0
-
-  "TODO: Ctrl+s -> open in split
-  "TODO: Ctrl+t -> open in tab
 
   " Note: by default, wildignore and g:ctrlp_custom_ignore only apply when globpath() is used to scan for files
   " thus these options do not apply when a command defined with g:ctrlp_user_command is being used.
@@ -20,5 +17,7 @@ if match(&runtimepath, 'ctrlp') != -1
   set wildignore+=*/lib/*
 
   " Performance optimisation. 
-  let g:ctrlp_clear_cache_on_exit = 0
+  let g:ctrlp_clear_cache_on_exit = 1
+
+  let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 endif

@@ -1,8 +1,15 @@
 " use utf-8 encoding
 set encoding=utf-8
 
-" colorscheme
+" Projects
+set exrc
+
+" Colorscheme
 syntax on
+
+" Text search
+set nohlsearch
+set ignorecase
 
 " Don't try to be vi compatible
 set nocompatible
@@ -39,6 +46,17 @@ set mouse=a
 " Following
 set foldmethod=syntax
 set foldlevelstart=20 " All folds open when opening a file
+
+" Colors
+colorscheme one
+
+" Font
+set nowrap
+if exists('g:vv')
+  VVset fontfamily=Fira\ Code
+  VVset fontsize=16
+endif
+
 
 " get correct json comment highlighting
 autocmd FileType json syntax match Comment +\/\/.\+$+

@@ -33,12 +33,4 @@ if match(&runtimepath, 'coc') != -1
 
   " Show signature help while editing
   autocmd CursorHoldI * silent! call CocAction('showSignatureHelp')
-
-  function! s:show_documentation()
-    if &filetype == 'vim'
-      execute 'h '.expand('<cword>')
-    else
-      call CocAction('doHover')
-    endif
-  endfunction
 endif

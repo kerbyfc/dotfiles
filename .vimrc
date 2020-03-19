@@ -3,6 +3,8 @@ set nocp
 
 let g:vim_home = get(g:, 'vim_home', expand('~/dotfiles/.vim/'))
 
+let g:coc_node_path = "/Users/crewman/.nvm/versions/node/v12.13.1/bin/node"
+
 " Load all vim configs {{{1
 let config_list = [
       \ 'plugins.vim',
