@@ -15,7 +15,7 @@ if match(&runtimepath, 'nerdtree') != -1
 
   map <C-.> :call ToggleNerdTree()<CR>
 
-  call NERDTreeAddKeyMap({
+  autocmd VimEnter * call NERDTreeAddKeyMap({
     \ 'key':           'D',
     \ 'callback':      'NERDTreeEnterDirectoryAndCD',
     \ 'quickhelpText': 'Enter directory and cd into it'})
@@ -36,5 +36,4 @@ if match(&runtimepath, 'nerdtree') != -1
   let NERDTreeQuitOnOpen = 3
 
   au VimLeave * :tabdo NERDTreeClose
-  au FileWritePost *.vim :source %
 endif

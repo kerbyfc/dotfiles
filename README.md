@@ -5,7 +5,7 @@ The single dot that has it all.
 Clone the repository into **~/dotfiles**: `git clone https://github.com/mrded/dotfiles.git ~/dotfiles`
 
 
-## IntelliJ IDEA Vim. 
+## IntelliJ IDEA Vim.
 
 `ln -s ~/dotfiles/.ideavimrc ~/.ideavimrc`
 
@@ -28,7 +28,7 @@ Clone the repository into **~/dotfiles**: `git clone https://github.com/mrded/do
 
 neovim sometimes may not install pluggins propperly. Try to run following:
 
-   :UpdateRemotePlugins 
+   :UpdateRemotePlugins
 
 ### vim-syntastic/syntastic || w0rp/ale
 

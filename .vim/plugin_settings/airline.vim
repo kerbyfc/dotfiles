@@ -1,4 +1,6 @@
 if match(&runtimepath, 'airline') != -1
+  let g:airline_theme='papercolor'
+
   let g:airline#extensions#tabline#enabled = 1
   let g:airline#extensions#tabline#formatter = 'jsformatter'
   let g:airline#extensions#tabline#show_tab_type = 0

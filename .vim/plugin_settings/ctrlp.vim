@@ -16,8 +16,14 @@ if match(&runtimepath, 'ctrlp') != -1
   set wildignore+=*/vendor/*
   set wildignore+=*/lib/*
 
-  " Performance optimisation. 
+  " Performance optimisation.
   let g:ctrlp_clear_cache_on_exit = 1
+  " Пробуем прыгнуть на уже открытый буффер <C-t>
+  let g:ctrlp_switch_buffer = 'T'
 
   let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+  let g:ctrlp_prompt_mappings = {
+  \    'PrtInsert("c")': ['<C-v>', '<insert>'],
+  \}
 endif

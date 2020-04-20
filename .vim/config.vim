@@ -1,11 +1,15 @@
 " use utf-8 encoding
-set encoding=utf-8
+set encoding=UTF-8
 
 " Projects
 set exrc
 
 " Colorscheme
 syntax on
+colorscheme one
+
+" Font
+set nowrap
 
 " Text search
 set nohlsearch
@@ -23,6 +27,7 @@ set backspace=2
 " show line numbers
 set number
 set numberwidth=2
+set relativenumber
 
 " Highlight current line
 set cursorline
@@ -40,6 +45,9 @@ set expandtab
 set splitbelow
 set splitright
 
+" scroll
+set scrolloff=5
+
 " Enable mouse
 set mouse=a
 
@@ -47,16 +55,18 @@ set mouse=a
 set foldmethod=syntax
 set foldlevelstart=20 " All folds open when opening a file
 
-" Colors
-colorscheme one
+" Node
+let g:node_host_prog = expand('~/.nvm/versions/node/v12.16.1/bin/neovim-node-host')
 
-" Font
-set nowrap
-if exists('g:vv')
-  VVset fontfamily=Fira\ Code
-  VVset fontsize=16
-endif
-
+set showcmd
+let mapleader=""
+let maplocalleader=","
 
 " get correct json comment highlighting
-autocmd FileType json syntax match Comment +\/\/.\+$+
+au FileType json syntax match Comment +\/\/.\+$+
+
+" automatically apply vim scripts changes
+au FileWritePost *.vim :source %
+
+" Автоматическое удаление висячих пробелов при сохранении
+autocmd BufWritePre * %s/\s\+$//e

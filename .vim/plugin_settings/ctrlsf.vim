@@ -13,7 +13,8 @@ if match(&runtimepath, 'ctrlsf') != -1
         \ "cache",
         \ "vendor",
         \ "lib",
-        \ "build"
+        \ "build",
+        \ "dist"
         \ ]
 
   map <S-D-f> :CtrlSF<space>

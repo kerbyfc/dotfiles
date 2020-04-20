@@ -6,8 +6,6 @@ if match(&runtimepath, 'coc') != -1
   " Better display for messages
   set cmdheight=2
 
-  let g:coc_user_config = get(g:, 'coc_user_config', {})
-
   " Rename the current word in the cursor
   nmap <leader>cr <Plug>(coc-rename)
 
@@ -32,5 +30,5 @@ if match(&runtimepath, 'coc') != -1
   nnoremap <silent> K :call <SID>show_documentation()<CR>
 
   " Show signature help while editing
-  autocmd CursorHoldI * silent! call CocAction('showSignatureHelp')
+  autocmd CursorHoldI * silent! call CocActionAsync('showSignatureHelp')
 endif

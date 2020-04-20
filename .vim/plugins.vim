@@ -8,18 +8,33 @@ call plug#begin('~/.vim/plugged')
 
 " Theme (colourscheme)
 Plug 'rakr/vim-one'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'sonph/onehalf'
 
+" Сессии
 Plug 'thaerkh/vim-workspace'
 
+" Управление окнами
+Plug 'camspiers/lens.vim'
+
+" Форматирование кода
+Plug 'editorconfig/editorconfig-vim'
+
 " A tree explorer.
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kristijanhusak/defx-icons'
+
+" Табы
+Plug 'gcmt/taboo.vim'
 
 " Fuzzy finder
 Plug 'ctrlpvim/ctrlp.vim'
 
 " Find text in files
 Plug 'dyng/ctrlsf.vim'
+
+" Навигация курсора по коду
+Plug 'bkad/CamelCaseMotion'
 Plug 'easymotion/vim-easymotion'
 
 " Multiple cursors
@@ -30,12 +45,6 @@ Plug 'sheerun/vim-polyglot'
 
 " Autocomplite
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-tsserver', {'do': 'npm install'}
-Plug 'neoclide/coc-prettier', {'do': 'npm install'}
-Plug 'neoclide/coc-snippets', {'do': 'npm install'}
-Plug 'neoclide/coc-eslint', {'do': 'npm install'}
-Plug 'neoclide/coc-json', {'do': 'npm install'}
-Plug 'neoclide/coc-eslint', {'do': 'npm install'}
 
 " Extract a variable
 Plug 'fvictorio/vim-extract-variable'
@@ -68,7 +77,7 @@ Plug 'thiagoalessio/rainbow_levels.vim'
 " Languages
 Plug 'flowtype/vim-flow'
 
-" Linters
+" Linting
 Plug 'dense-analysis/ale'
 
 " Initialize plugin system
